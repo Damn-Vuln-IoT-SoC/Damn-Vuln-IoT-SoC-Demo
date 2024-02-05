@@ -100,7 +100,7 @@ class BaseSoC(SoCCore):
 def main():
 
     config_parser = Config.getInstance()
-    config_parser.readFile(os.path.dirname(__file__) + "config/config.ini")
+    config_parser.readFile(os.path.dirname(__file__) + "/config/config.ini")
 
     from litex.soc.integration.soc import LiteXSoCArgumentParser
     parser = LiteXSoCArgumentParser(description="LiteX SoC on Basys3")
