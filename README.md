@@ -9,7 +9,7 @@
 
 # :book: Damn Vuln IoT SoC Overview
 
-The aim of this project is to create an educational platform with a primary focus on constructing a generator for Systems-on-Chip (SoC) that is vulnerable, configurable, and user-friendly. It is tailored for individuals seeking to improve their proficiency in identifying or exploiting vulnerabilities within the field of hardware security. This platform can function as instructional material or be employed for Capture The Flag (CTF) challenges, offering users practical hands-on experience in a controlled setting. Additionally, the platform can be utilized to assess hardware description analysis tools that identify bugs and backdoors.
+The aim of Damn Vuln IoT SoC is to create an educational platform with a primary focus on constructing a generator for Systems-on-Chip (SoC) that is vulnerable, configurable, and user-friendly. It is tailored for individuals seeking to improve their proficiency in identifying or exploiting vulnerabilities within the field of hardware security. This platform can function as instructional material or be employed for Capture The Flag (CTF) challenges, offering users practical hands-on experience in a controlled setting. Additionally, the platform can be utilized to assess hardware description analysis tools that identify bugs and backdoors.
 
 # :rocket: Getting Started
 
