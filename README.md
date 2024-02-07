@@ -21,7 +21,10 @@ The aim of this project is to create an educational platform with a primary focu
 To use this demo you have to install [Damn Vuln IoT SoC](https://github.com/Damn-Vuln-IoT-SoC/Damn-Vuln-IoT-SoC) before.
 
 ```
-
+git clone https://github.com/Damn-Vuln-IoT-SoC/Damn-Vuln-IoT-SoC-Demo.git
+pip3 install Damn-Vuln-IoT-SoC-Demo
+cd Damn-Vuln-IoT-SoC-Demo/Damn-Vuln-IoT-SoC-Demo
+python3 build.py --cpu-type=vexriscv --cpu-variant=lite+vul --integrated-main-ram-size=0x5000 --bios-console=disable --build
 ```
 
 # Contributors
