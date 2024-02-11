@@ -18,7 +18,7 @@ The aim of Damn Vuln IoT SoC is to create an educational platform with a primary
 
 ## Hardware
 
-- Digilent Basys3
+- Digilent Basys3 (the demo can easily be ported to another FPGA board)
 - Keypad (Pmod KYPD)
 - Flash SPI (Pmod SF3)
 - JTAG Programmer (JTAG-HS2 / FT232H)
