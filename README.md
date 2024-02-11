@@ -16,6 +16,13 @@ The aim of Damn Vuln IoT SoC is to create an educational platform with a primary
 > ⚠️ Before installation, we assume that your development tools for your FPGA board are already installed, for example, if you are using a Digilent Basys3 board you need to install Xilinx Vivado. 
 > These tools are not necessary if you plan to use only simulation.
 
+## Hardware
+
+- Digilent Basys3
+- Keypad (Pmod KYPD)
+- Flash SPI (Pmod SF3)
+- JTAG Programmer (JTAG-HS2 / FT232H)
+
 ## Use the demo
 
 To use this demo you have to install [Damn Vuln IoT SoC](https://github.com/Damn-Vuln-IoT-SoC/Damn-Vuln-IoT-SoC) before.
@@ -24,7 +31,7 @@ To use this demo you have to install [Damn Vuln IoT SoC](https://github.com/Damn
 $ git clone https://github.com/Damn-Vuln-IoT-SoC/Damn-Vuln-IoT-SoC-Demo.git
 $ pip3 install Damn-Vuln-IoT-SoC-Demo
 $ cd Damn-Vuln-IoT-SoC-Demo/Damn-Vuln-IoT-SoC-Demo
-$ python3 build.py --cpu-type=vexriscv --cpu-variant=lite+vul --integrated-main-ram-size=0x5000 --bios-console=disable --build
+$ python3 build.py --cpu-type=vexriscv --cpu-variant=lite+vul --integrated-main-ram-size=0x5000 --bios-console=disable --build --load
 ```
 
 # Contributors
