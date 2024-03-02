@@ -1,11 +1,5 @@
 #!/usr/bin/env python3
 
-#
-# This file is part of LiteX-Boards.
-#
-# Copyright (c) 2020-2021 Xuanyu Hu <xuanyu.hu@whu.edu.cn>
-# SPDX-License-Identifier: BSD-2-Clause
-
 from migen import *
 
 from litex.soc.cores.clock import *
