@@ -27,11 +27,32 @@ The aim of Damn Vuln IoT SoC is to create an educational platform with a primary
 
 To use this demo you have to install [Damn Vuln IoT SoC](https://github.com/Damn-Vuln-IoT-SoC/Damn-Vuln-IoT-SoC) before.
 
+If you have the hardware :
+
 ```console
 $ git clone https://github.com/Damn-Vuln-IoT-SoC/Damn-Vuln-IoT-SoC-Demo.git
-$ pip3 install Damn-Vuln-IoT-SoC-Demo
+$ pip3 install Damn-Vuln-IoT-SoC-Demo/
 $ cd Damn-Vuln-IoT-SoC-Demo/Damn-Vuln-IoT-SoC-Demo
-$ python3 build.py --cpu-type=vexriscv --cpu-variant=lite+vul --integrated-main-ram-size=0x5000 --bios-console=disable --build --load
+$ chmod +x build.py
+$ ./build.py --cpu-type=vexriscv --cpu-variant=lite+vul --integrated-main-ram-size=0x5000 --no-compile-gateware --build
+$ cd firmware
+$ ./firmware.py --build-path=../build/board/ --mem=rom
+$ cd ..
+$ ./build.py --cpu-type=vexriscv --cpu-variant=lite+vul --integrated-rom-init=firmware/firmware.bin --bios-console=disable --build --load
+$ screen <device> 115200
+```
+Alternatively, you can try the simulation, which is a downgraded version of the challenges and won't allow you to do them all.
+
+```console
+$ git clone https://github.com/Damn-Vuln-IoT-SoC/Damn-Vuln-IoT-SoC-Demo.git
+$ pip3 install Damn-Vuln-IoT-SoC-Demo/
+$ cd Damn-Vuln-IoT-SoC-Demo/Damn-Vuln-IoT-SoC-Demo
+$ chmod +x build.py
+$ ./sim.py --cpu-type=vexriscv --cpu-variant=lite+vul --integrated-main-ram-size=0x5000 --no-compile-gateware
+$ cd firmware
+$ ./firmware.py --build-path=../build/sim/ --mem=rom
+$ cd ..
+$ ./sim.py --cpu-type=vexriscv --cpu-variant=lite+vul --integrated-rom-init=firmware/firmware.bin --bios-console=disable
 ```
 
 # Contributors
@@ -42,7 +63,7 @@ $ python3 build.py --cpu-type=vexriscv --cpu-variant=lite+vul --integrated-main-
 
 ### Developers
 
-- Mohamed AFASSI
 - [Adam HENAULT](https://github.com/adamhlt)
+- Mohamed AFASSI
 - Seydina Oumar NIANG
 - Rébecca SZABO
