@@ -47,7 +47,7 @@ Alternatively, you can try the simulation, which is a downgraded version of the 
 $ git clone https://github.com/Damn-Vuln-IoT-SoC/Damn-Vuln-IoT-SoC-Demo.git
 $ pip3 install Damn-Vuln-IoT-SoC-Demo/
 $ cd Damn-Vuln-IoT-SoC-Demo/Damn-Vuln-IoT-SoC-Demo
-$ chmod +x build.py
+$ chmod +x sim.py
 $ ./sim.py --cpu-type=vexriscv --cpu-variant=lite+vul --integrated-main-ram-size=0x5000 --no-compile-gateware
 $ cd firmware
 $ ./firmware.py --build-path=../build/sim/ --mem=rom
