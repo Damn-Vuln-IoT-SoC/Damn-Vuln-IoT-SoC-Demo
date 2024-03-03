@@ -55,7 +55,11 @@ $ cd ..
 $ ./sim.py --cpu-type=vexriscv --cpu-variant=lite+vul --integrated-rom-init=firmware/firmware.bin --bios-console=disable
 ```
 
-https://github.com/Damn-Vuln-IoT-SoC/Damn-Vuln-IoT-SoC-Demo/assets/48086737/0a9e7067-9293-4996-a1a7-34ed17cb818e
+
+
+https://github.com/Damn-Vuln-IoT-SoC/Damn-Vuln-IoT-SoC-Demo/assets/48086737/28d7e10f-b098-40fe-87c9-58fb826b0ef4
+
+
 
 # Contributors
 
